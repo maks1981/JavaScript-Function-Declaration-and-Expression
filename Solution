@@ -1,0 +1,24 @@
+// Function Declaration vs Function Expression on Javascript
+
+function capitalize(str) {
+	return str.charAt(0),toUpperCase() + str.slice(1);
+}
+var capitalize = function(str){
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Functions quis.2 Exercise below.
+
+function test(x,y) {
+	return y - x;
+}
+test(15, 45);
+
+//Another example
+
+function test(x) {
+    return x*2;
+    console.log(x);
+    return x/2;
+}
+test(40);//80
